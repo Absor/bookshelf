@@ -10,9 +10,7 @@ install:
   - bower install
   - cd ..
 
-before_script:
+script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
-
-script:
   - bundle exec rake
