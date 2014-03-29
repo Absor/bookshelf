@@ -20,3 +20,6 @@
 
 # Generated content
 /public
+
+# Node modules
+node_modules
