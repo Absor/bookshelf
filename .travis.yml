@@ -4,8 +4,9 @@ rvm:
   - 2.1.0
 
 before_script:
-  - npm install -g bower grunt-cli
   - cd ngapp
+  - npm install -g bower grunt-cli
+  - npm install
   - bower install
   - cd ..
 
