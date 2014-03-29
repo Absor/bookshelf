@@ -10,3 +10,7 @@ task :default => [:ngtest, :spec]
 task :ngtest do
   system("cd ngapp; grunt test")
 end
+
+task :prod do
+  system("cd ngapp; npm install -g bower grunt-cli; npm install; bower install; grunt build --force")
+end
