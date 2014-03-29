@@ -5,8 +5,8 @@ require File.expand_path('../config/application', __FILE__)
 
 Bookshelf::Application.load_tasks
 
-task :default => [:test, :spec]
+task :default => [:ngtest, :spec]
 
-task :test do
+task :ngtest do
   system("cd ngapp; grunt test")
 end
