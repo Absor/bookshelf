@@ -5,8 +5,14 @@ gem 'rails', '4.0.2'
 
 gem 'rails-api'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'

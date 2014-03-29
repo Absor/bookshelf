@@ -15,4 +15,8 @@
 /log/*.log
 /tmp
 
+# IDE files
 .idea
+
+# Generated content
+/public
