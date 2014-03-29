@@ -3,13 +3,12 @@ language: ruby
 rvm:
   - 2.1.0
 
-install:
+before_install:
   - cd ngapp
   - npm install -g bower grunt-cli
   - npm install
   - bower install
   - cd ..
-  - bundle install
 
 before_script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
