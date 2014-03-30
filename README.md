@@ -4,9 +4,9 @@
 
 # Heroku setup
 
-This sofware uses nodejs-grunt-compass buildpack to first build the angular project and then the basic Ruby buildpack to setup Rails project.
+This sofware uses nodejs-grunt-compass buildpack to first build the Angular project and then the basic Ruby buildpack to setup Rails project.
 
-1. Create instance
+1. Create an instance
 2. Setup buildpack
 
     ```

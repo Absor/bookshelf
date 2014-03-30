@@ -20,6 +20,12 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
+gem 'coveralls', require: false
+
+gem 'devise'
+
+gem 'pundit'
+
 # gem 'compass', '~> 0.12.4'
 
 # To use ActiveModel has_secure_password
