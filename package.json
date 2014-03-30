@@ -12,6 +12,6 @@
     },
     "scripts" :
     {
-        "install" : "cd ngapp && npm install -g bower grunt-cli && npm install && bower install --config.interactive=false && grunt build --force"
+        "install" : "cd ngapp && gem install compass && npm install -g bower grunt-cli && npm install && bower install --config.interactive=false && grunt build --force"
     }
 }
