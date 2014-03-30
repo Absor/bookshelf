@@ -20,3 +20,4 @@ deploy:
   on:
     repo: Absor/bookshelf
   run: rake db:migrate
+  buildpack: https://github.com/ddollar/heroku-buildpack-multi.git
