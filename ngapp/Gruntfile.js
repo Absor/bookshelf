@@ -1,4 +1,3 @@
-// Generated on 2014-03-29 using generator-angular 0.8.0
 'use strict';
 
 // # Globbing
@@ -9,7 +8,10 @@
 
 module.exports = function (grunt) {
 
-  // Load grunt tasks automatically
+    grunt.option('force', true);
+
+
+    // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
   // Time how long tasks take. Can help when optimizing build times

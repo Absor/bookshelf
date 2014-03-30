@@ -20,7 +20,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
-gem 'compass', '~> 0.12.4'
+# gem 'compass', '~> 0.12.4'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
