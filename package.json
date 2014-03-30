@@ -1,17 +1,19 @@
 {
-    "name": "my-grunt-hub",
-    "version": "0.1.0",
-    "description": "A grunt hub",
+    "name": "Bookshelf-hub",
+    "version": "1.0.0",
+    "description": "A hub to Bookshelf Angular project",
     "repository": {
         "type": "git",
-        "url": "git://github.com/user/repo.git"
+        "url": "git@github.com:Absor/bookshelf.git"
     },
     "dependencies": {
         "grunt": "~0.4.1",
         "grunt-hub": "^0.6.2"
     },
     "scripts": {
-        // Installs also (with npm install) dependencies for angular project.
         "install": "cd ngapp && npm install -g bower grunt-cli && npm install && bower install --config.interactive=false"
+    },
+    "engines": {
+        "node": "0.10.26"
     }
 }
