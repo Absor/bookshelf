@@ -19,4 +19,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('heroku:production', ['hub']);
 
+    grunt.registerTask('heroku:development', ['hub']);
+
 };
