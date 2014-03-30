@@ -1,17 +1,17 @@
 {
-  "name": "my-grunt-hub",
-  "version": "0.1.0",
-  "description": "A grunt hub",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/user/repo.git"
-  },
+    "name": "my-grunt-hub",
+    "version": "0.1.0",
+    "description": "A grunt hub",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/user/repo.git"
+    },
     "dependencies": {
         "grunt": "~0.4.1",
         "grunt-hub": "^0.6.2"
     },
-    "scripts" :
-    {
-        "install" : "cd ngapp && npm install -g bower grunt-cli && npm install && bower install --config.interactive=false && grunt build --force"
+    "scripts": {
+        // Installs also (with npm install) dependencies for angular project.
+        "install": "cd ngapp && npm install -g bower grunt-cli && npm install && bower install --config.interactive=false"
     }
 }

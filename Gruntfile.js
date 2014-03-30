@@ -1,23 +1,21 @@
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
+    grunt.initConfig({
+        hub: {
+            all: {
+                src: ['ngapp/Gruntfile.js'],
+                tasks: ['build']
+            }
+        }
+    });
 
+    grunt.loadNpmTasks('grunt-hub');
 
-  grunt.initConfig({
-    hub: {
-      all: {
-        src: ['ngapp/Gruntfile.js'],
-        tasks: ['build']
-      }
-    }
-  });
+    grunt.registerTask('default', ['hub']);
 
-  grunt.loadNpmTasks('grunt-hub');
-
-  grunt.registerTask('default', ['hub']);
-
-  grunt.registerTask('heroku:production', ['hub']);
+    grunt.registerTask('heroku:production', ['hub']);
 
     grunt.registerTask('heroku:development', ['hub']);
 
