@@ -7,12 +7,9 @@
     "url": "git://github.com/user/repo.git"
   },
     "dependencies": {
+        "grunt": "~0.4.1",
+        "grunt-hub": "^0.6.2"
     },
-  "devDependencies": {
-
-    "grunt": "~0.4.1",
-    "grunt-hub": "^0.6.2"
-  },
     "scripts" :
     {
         "install" : "cd ngapp && npm install -g bower grunt-cli && npm install && bower install --config.interactive=false && grunt build --force"
