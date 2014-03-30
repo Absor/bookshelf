@@ -9,6 +9,11 @@
     "dependencies": {
     },
   "devDependencies": {
-
-  }
+    "grunt": "~0.4.1",
+    "grunt-hub": "^0.6.2"
+  },
+    "scripts" :
+    {
+        "install" : "cd ngapp && npm install && bower install"
+    }
 }
