@@ -23,3 +23,6 @@
 
 # Node modules
 node_modules
+
+# Coveralls stuff
+coverage
