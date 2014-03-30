@@ -12,5 +12,5 @@ task :ngtest do
 end
 
 task :prod do
-  system("cd ngapp; npm install -g bower grunt-cli; npm install; bower install; grunt build --force")
+  system("cd ngapp; npm install -g bower grunt-cli; npm install; bower install --config.interactive=false; grunt build --force")
 end
