@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::API
+  include ActionController::MimeResponds
   include Pundit
 
   # This is our new function that comes before Devise's one

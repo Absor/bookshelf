@@ -1,6 +1,7 @@
 # Build
 
 [![Build Status](https://travis-ci.org/Absor/bookshelf.svg?branch=master)](https://travis-ci.org/Absor/bookshelf)
+[![Coverage Status](https://coveralls.io/repos/Absor/bookshelf/badge.png?branch=master)](https://coveralls.io/r/Absor/bookshelf?branch=master)
 
 # Heroku setup
 
