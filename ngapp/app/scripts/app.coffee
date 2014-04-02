@@ -1,7 +1,20 @@
 'use strict'
 
 angular
-  .module('ngappApp', [
-    'ngCookies',
-    'ngResource'
+  .module('bookshelfApp', [
+    'ui.router'
   ])
+  .config(($stateProvider, $urlRouterProvider) ->
+    $urlRouterProvider.otherwise "/main"
+
+    $stateProvider
+      .state('main', {
+        url: '/',
+        templateUrl: 'views/main.html'
+      })
+      .state('signin', {
+        url: '/signin',
+        templateUrl: 'views/signin.html',
+        controller: 'SigninCtrl'
+      })
+  )

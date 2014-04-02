@@ -1,17 +1,17 @@
 'use strict'
 
-describe 'Controller: MainCtrl', ->
+describe 'Controller: SigninCtrl', ->
 
   # load the controller's module
   beforeEach module 'bookshelfApp'
 
-  MainCtrl = {}
+  SigninCtrl = {}
   scope = {}
 
   # Initialize the controller and a mock scope
   beforeEach inject ($controller, $rootScope) ->
     scope = $rootScope.$new()
-    MainCtrl = $controller 'MainCtrl', {
+    SigninCtrl = $controller 'SigninCtrl', {
       $scope: scope
     }
 
