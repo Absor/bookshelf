@@ -7,13 +7,26 @@ describe 'Controller: SigninCtrl', ->
 
   SigninCtrl = {}
   scope = {}
+  $httpBackend = {}
 
   # Initialize the controller and a mock scope
-  beforeEach inject ($controller, $rootScope) ->
+  beforeEach inject ($controller, $rootScope, _$httpBackend_) ->
+    $httpBackend = _$httpBackend_;
     scope = $rootScope.$new()
     SigninCtrl = $controller 'SigninCtrl', {
       $scope: scope
     }
 
-  it 'should attach a list of awesomeThings to the scope', ->
-    #expect(scope.awesomeThings.length).toBe 3
+  afterEach ->
+    $httpBackend.verifyNoOutstandingExpectation()
+    $httpBackend.verifyNoOutstandingRequest()
+
+  it 'calling signin sends a post request with right parameters', ->
+    $httpBackend.whenPOST('/api/sessions').respond 'jee'
+    $httpBackend.expectPOST '/api/sessions'
+    scope.user =
+      email: 'e@mail.com',
+      password: 'Email1'
+    scope.signin()
+    $httpBackend.flush()
+
