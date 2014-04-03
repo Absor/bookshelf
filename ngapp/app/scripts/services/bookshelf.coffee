@@ -1,12 +1,11 @@
 'use strict'
 
 angular.module('bookshelfApp')
-  .factory 'Bookshelf', ->
-    class Session
-      create: (id, password) ->
-        alert "jee"
+  .factory 'Bookshelf', ($http) ->
+    Session =
+      create: (user) ->
+        $http.post('/api/sessions', {email: user.email, password: user.password})
 
-    # Public API here
     {
       Session: Session
     }

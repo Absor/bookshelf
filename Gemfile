@@ -9,6 +9,7 @@ gem 'rails-api'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
 group :production do
@@ -16,8 +17,8 @@ group :production do
   gem 'rails_12factor'
 end
 
-group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0.beta'
+group :development do
+  gem 'rack-cors'
 end
 
 gem 'coveralls', require: false

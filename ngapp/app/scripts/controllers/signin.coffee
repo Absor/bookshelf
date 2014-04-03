@@ -6,8 +6,8 @@ angular.module('bookshelfApp')
     $scope.error = false
 
     $scope.signin = ->
-      if $scope.user.id? and $scope.user.password?
+      if $scope.user.email? and $scope.user.password?
         $scope.error = false
-        Bookshelf.Session.create($scope.user.id, $scope.user.password)
+        Bookshelf.Session.create($scope.user)
       else
         $scope.error = true

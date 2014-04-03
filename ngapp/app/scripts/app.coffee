@@ -5,7 +5,7 @@ angular
     'ui.router'
   ])
   .config(($stateProvider, $urlRouterProvider) ->
-    $urlRouterProvider.otherwise "/main"
+    $urlRouterProvider.otherwise "/"
 
     $stateProvider
       .state('main', {

@@ -24,4 +24,11 @@ Bookshelf::Application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
+  config.middleware.use Rack::Cors do
+    allow do
+      origins 'localhost:9000'
+      resource '*', :headers => :any, :methods => [:get, :post, :options, :delete]
+    end
+  end
+
 end

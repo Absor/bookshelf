@@ -2,7 +2,7 @@ Bookshelf::Application.routes.draw do
 
   devise_for :users
   scope '/api', defaults: {format: 'json'} do
-
+    resource :sessions
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
