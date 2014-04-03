@@ -22,8 +22,7 @@ describe 'Controller: SigninCtrl', ->
     $httpBackend.verifyNoOutstandingRequest()
 
   it 'calling signin sends a post request with right parameters', ->
-    $httpBackend.whenPOST('/api/sessions').respond 'jee'
-    $httpBackend.expectPOST '/api/sessions'
+    $httpBackend.expectPOST('/api/sessions').respond 'jee'
     scope.user =
       email: 'e@mail.com',
       password: 'Email1'
