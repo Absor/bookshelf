@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20140412122927) do
 
   create_table "shelves", force: true do |t|
-    t.string   "name",       default: "A bookshelf", null: false
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"

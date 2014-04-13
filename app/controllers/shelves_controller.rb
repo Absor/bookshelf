@@ -1,7 +1,7 @@
 class ShelvesController < ApplicationController
 
   def index
-    @shelves = Shelf.find_by(user_id: current_user.id)
+    @shelves = Shelf.where(user_id: current_user.id)
     authorize @shelves
 
     render json: @shelves

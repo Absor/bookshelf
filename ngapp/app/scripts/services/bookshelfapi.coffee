@@ -27,6 +27,7 @@ angular.module('bookshelfApp')
         deferred = $q.defer()
         $http.get('/api/bookshelves', {headers: getAuthHeaders()})
           .success((data) ->
+
             deferred.resolve(data)
           )
           .error(-> deferred.reject())
