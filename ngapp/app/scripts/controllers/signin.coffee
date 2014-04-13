@@ -1,13 +1,17 @@
 'use strict'
 
 angular.module('bookshelfApp')
-  .controller 'SigninCtrl', ($scope, Bookshelf) ->
+  .controller 'SignInCtrl', ($scope, BookshelfAPI, $state) ->
     $scope.user = {}
     $scope.error = false
 
-    $scope.signin = ->
+    $scope.signIn = ->
       if $scope.user.email? and $scope.user.password?
         $scope.error = false
-        Bookshelf.Session.create($scope.user)
+        BookshelfAPI.User.signIn($scope.user)
+          .then(
+            -> $state.go 'main',
+            -> $scope.error = true
+          )
       else
         $scope.error = true

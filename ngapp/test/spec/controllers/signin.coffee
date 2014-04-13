@@ -1,19 +1,17 @@
 'use strict'
 
-describe 'Controller: SigninCtrl', ->
+describe 'Controller: SignInCtrl', ->
 
-  # load the controller's module
   beforeEach module 'bookshelfApp'
 
-  SigninCtrl = {}
+  SignInCtrl = {}
   scope = {}
   $httpBackend = {}
 
-  # Initialize the controller and a mock scope
   beforeEach inject ($controller, $rootScope, _$httpBackend_) ->
     $httpBackend = _$httpBackend_;
     scope = $rootScope.$new()
-    SigninCtrl = $controller 'SigninCtrl', {
+    SignInCtrl = $controller 'SignInCtrl', {
       $scope: scope
     }
 
@@ -21,11 +19,12 @@ describe 'Controller: SigninCtrl', ->
     $httpBackend.verifyNoOutstandingExpectation()
     $httpBackend.verifyNoOutstandingRequest()
 
-  it 'calling signin sends a post request with right parameters', ->
-    $httpBackend.expectPOST('/api/sessions').respond 'jee'
-    scope.user =
+  it 'calling signIn sends a post request with right parameters', ->
+    data =
       email: 'e@mail.com',
       password: 'Email1'
-    scope.signin()
+    $httpBackend.expectPOST('/api/users/sign_in', data).respond 'jee'
+    scope.user = data
+    scope.signIn()
     $httpBackend.flush()
 

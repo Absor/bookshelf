@@ -1,4 +1,4 @@
-class ApplicationPolicy
+class ShelfPolicy
   attr_reader :user, :record
 
   def initialize(user, record)
@@ -7,35 +7,26 @@ class ApplicationPolicy
   end
 
   def index?
-    false
+    true
   end
 
   def show?
-    scope.where(:id => record.id).exists?
+    @record.user == @user
   end
 
   def create?
-    false
-  end
-
-  def new?
-    create?
+    true
   end
 
   def update?
-    false
-  end
-
-  def edit?
-    update?
+    @record.user == @user
   end
 
   def destroy?
-    false
+    @record.user == @user
   end
 
   def scope
     Pundit.policy_scope!(user, record.class)
   end
 end
-

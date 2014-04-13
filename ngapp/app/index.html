@@ -23,7 +23,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-include="'views/navigation.html'"></div>
+    <div ng-include="'views/navigation.html'" ng-controller="NavigationCtrl"></div>
     <div ui-view></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -50,13 +50,20 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/signin.js"></script>
-    <script src="scripts/services/bookshelf.js"></script>
+    <script src="scripts/services/bookshelfapi.js"></script>
+    <script src="scripts/controllers/navigation.js"></script>
+    <script src="scripts/services/bookshelfresponseinterceptor.js"></script>
+    <script src="scripts/services/storage.js"></script>
+    <script src="scripts/controllers/signup.js"></script>
+    <script src="scripts/services/currentuser.js"></script>
+    <script src="scripts/controllers/bookshelf.js"></script>
     <!-- endbuild -->
 </body>
 </html>

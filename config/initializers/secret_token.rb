@@ -16,4 +16,4 @@
 # Using secret_token for rails3 compatibility. Change to secret_key_base
 # to avoid deprecation warning.
 # Can be safely removed in a rails3 api-only application.
-Bookshelf::Application.config.secret_token = 'cd6d138f260915162d779e609d9341eb0d77a3ccea1b22e976124298d53b015ed50f41d6e8ed843987a9eb641c4d50aeaf249547b59711be2fd97cc5eaa36c97'
+Bookshelf::Application.config.secret_key_base = 'cd6d138f260915162d779e609d9341eb0d77a3ccea1b22e976124298d53b015ed50f41d6e8ed843987a9eb641c4d50aeaf249547b59711be2fd97cc5eaa36c97'
