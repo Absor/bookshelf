@@ -19,12 +19,15 @@ describe 'Controller: SignInCtrl', ->
     $httpBackend.verifyNoOutstandingExpectation()
     $httpBackend.verifyNoOutstandingRequest()
 
-  it 'calling signIn sends a post request with right parameters', ->
-    data =
-      email: 'e@mail.com',
-      password: 'Email1'
-    $httpBackend.expectPOST('/api/users/sign_in', data).respond 'jee'
-    scope.user = data
-    scope.signIn()
-    $httpBackend.flush()
+  describe 'with the correct input', ->
+
+    it 'calling signIn sends a post request with right parameters', ->
+      data =
+        email: 'e@mail.com',
+        password: 'Email1'
+      $httpBackend.expectPOST('/api/users/sign_in', data).respond 'jee'
+      $httpBackend.expectGET('views/main.html').respond 'html' # redirect to main page
+      scope.user = data
+      scope.signIn()
+      $httpBackend.flush()
 

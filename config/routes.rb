@@ -10,5 +10,7 @@ Bookshelf::Application.routes.draw do
     end
 
     resources :bookshelves, except: [:new, :edit], controller: :shelves
+    resources :books, except: [:new, :edit]
+    post '/books/search', to: 'books#search'
   end
 end

@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe "Shelves" do
+describe "Books" do
 =begin
-  describe "GET /shelves" do
+  describe "GET /books" do
     it "works! (now write some real specs)" do
-      get shelves_path
+      get books_path
       expect(response.status).to be(200)
     end
   end
