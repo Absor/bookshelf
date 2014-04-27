@@ -1,0 +1,67 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1>Book search</h1>
+        <p>Adding books to {{bookshelf().name}}</p>
+        <p><a class="btn btn-default btn-lg" role="button" ng-click="back()"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></p>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="margin-bottom: 20px">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+            <form role="form" novalidate>
+                <div class="form-group">
+                    <label class="sr-only" for="search">Search</label>
+                    <input type="text" class="form-control center-block" id="search" placeholder="" ng-model="searchTerm">
+                </div>
+                <button type="submit" class="btn btn-default center-block" ng-click="search(searchTerm)">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-6" ng-repeat-start="book in books">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="well">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4">
+                                <img ng-hide="book.image_link" src="/images/no_cover.jpg" alt="{{book.title}}" class="img-thumbnail img-responsive center-block">
+                                <img ng-show="book.image_link" ng-src="{{book.image_link}}" alt="{{book.title}}" class="img-thumbnail img-responsive center-block">
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <h4>{{book.title}}</h4>
+                                <dl>
+                                    <dt ng-show="book.authors">author(s)</dt>
+                                    <dd ng-show="book.authors">{{book.authors}}</dd>
+
+                                    <dt ng-show="book.publisher">publisher</dt>
+                                    <dd ng-show="book.publisher">{{book.publisher}}</dd>
+
+                                    <dt ng-show="book.published_date">published</dt>
+                                    <dd ng-show="book.published_date">{{book.published_date|date:'d.M.yyyy'}}</dd>
+
+                                    <dt ng-show="book.isbn">isbn</dt>
+                                    <dd ng-show="book.isbn">{{book.isbn}}</dd>
+
+                                    <dt ng-show="book.page_count">pages</dt>
+                                    <dd ng-show="book.page_count">{{book.page_count}}</dd>
+
+                                    <dt ng-show="book.language">language</dt>
+                                    <dd ng-show="book.language">{{book.language}}</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="pull-right">
+                                    <button ng-hide="isInBookshelf(book.isbn)" type="button" class="btn btn-primary" ng-click="addToBookshelf(book.isbn)" id="{{book.isbn}}" data-loading-text="Adding">Add</button>
+                                    <button ng-show="isInBookshelf(book.isbn)" type="button" class="btn btn-success" disabled="disabled">Added</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix" ng-show="$odd" ng-repeat-end></div>
+    </div>
+</div>

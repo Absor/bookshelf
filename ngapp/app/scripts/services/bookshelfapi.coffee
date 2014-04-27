@@ -19,10 +19,17 @@ angular.module('bookshelfApp')
 
       signOut: ->
         Storage.removeLogin()
+        # TODO send to server
 
     Bookshelf =
       find: (id) ->
-        alert 'test'
+        deferred = $q.defer()
+        $http.get('/api/bookshelves/' + id, {headers: getAuthHeaders()})
+        .success((data) ->
+          deferred.resolve(data)
+        )
+        .error(-> deferred.reject())
+        deferred.promise
       findAll: ->
         deferred = $q.defer()
         $http.get('/api/bookshelves', {headers: getAuthHeaders()})
@@ -39,8 +46,43 @@ angular.module('bookshelfApp')
           )
         .error(-> deferred.reject())
         deferred.promise
+      destroy: (id) ->
+        deferred = $q.defer()
+        $http.delete('/api/bookshelves/'+id, {headers: getAuthHeaders()})
+        .success((data) ->
+          deferred.resolve(data)
+        )
+        .error(-> deferred.reject())
+        deferred.promise
+
+    Book =
+      search: (searchTerm) ->
+        deferred = $q.defer()
+        $http.post('/api/books/search', {search: searchTerm}, {headers: getAuthHeaders()})
+        .success((data) ->
+            deferred.resolve(data)
+          )
+        .error(-> deferred.reject())
+        deferred.promise
+      create: (bookshelfId, data) ->
+        deferred = $q.defer()
+        $http.post('/api/bookshelves/' + bookshelfId + '/books', {book: data}, {headers: getAuthHeaders()})
+        .success((data) ->
+          deferred.resolve(data)
+        )
+        .error(-> deferred.reject())
+        deferred.promise
+      random: ->
+        deferred = $q.defer()
+        $http.get('/api/books/random')
+        .success((data) ->
+          deferred.resolve(data)
+        )
+        .error(-> deferred.reject())
+        deferred.promise
 
     {
-      User: User,
+      User: User
       Bookshelf: Bookshelf
+      Book: Book
     }

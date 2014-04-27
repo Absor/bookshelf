@@ -11,11 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140413092535) do
+ActiveRecord::Schema.define(version: 20140427152145) do
+
+  create_table "book_on_shelves", force: true do |t|
+    t.integer  "shelf_id"
+    t.integer  "book_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "books", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.string   "authors"
+    t.string   "publisher"
+    t.date     "published_date"
+    t.text     "description"
+    t.string   "isbn"
+    t.integer  "page_count"
+    t.string   "print_type"
+    t.string   "categories"
+    t.string   "language"
+    t.string   "image_link"
   end
 
   create_table "shelves", force: true do |t|

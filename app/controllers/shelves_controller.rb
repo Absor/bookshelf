@@ -1,17 +1,17 @@
 class ShelvesController < ApplicationController
 
   def index
-    @shelves = Shelf.where(user_id: current_user.id)
+    @shelves = Shelf.includes(:books).order('created_at DESC').where(user_id: current_user.id)
     authorize @shelves
 
-    render json: @shelves
+    render json: @shelves.to_json(include: :books)
   end
 
   def show
-    @shelf = Shelf.find(params[:id])
+    @shelf = Shelf.includes(:books).find(params[:id])
     authorize @shelf
 
-    render json: @shelf
+    render json: @shelf.to_json(include: :books)
   end
 
   def create

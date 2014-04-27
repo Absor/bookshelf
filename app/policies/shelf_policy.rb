@@ -25,8 +25,4 @@ class ShelfPolicy
   def destroy?
     @record.user == @user
   end
-
-  def scope
-    Pundit.policy_scope!(user, record.class)
-  end
 end

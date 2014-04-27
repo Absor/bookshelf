@@ -9,6 +9,15 @@ angular.module('bookshelfApp')
 
     $scope.addShelf = ->
       BookshelfAPI.Bookshelf.create(null).then(
-        (data) -> $scope.bookshelves.push data
-        (error) -> alert 'error'
+        (data) -> $scope.bookshelves.unshift data
+        (error) -> $scope.alert = {type: 'danger', msg: 'Could not add bookshelf.'}
       )
+
+    $scope.deleteShelf = (id) ->
+      BookshelfAPI.Bookshelf.destroy(id).then(
+        (data) -> _.remove($scope.bookshelves, (shelf) -> shelf.id == id) # TODO go to list page (when on show page and deleting)
+        (error) -> $scope.alert = {type: 'danger', msg: 'Could not delete bookshelf.'}
+      )
+
+    $scope.closeAlert = ->
+      $scope.alert = null

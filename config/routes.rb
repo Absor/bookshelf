@@ -9,8 +9,10 @@ Bookshelf::Application.routes.draw do
       end
     end
 
-    resources :bookshelves, except: [:new, :edit], controller: :shelves
-    resources :books, except: [:new, :edit]
+    resources :bookshelves, except: [:new, :edit], controller: :shelves do
+      resources :books, except: [:new, :edit]
+    end
     post '/books/search', to: 'books#search'
+    get '/books/random', to: 'books#random'
   end
 end

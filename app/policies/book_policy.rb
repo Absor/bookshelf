@@ -1,4 +1,4 @@
-class ShelfPolicy
+class BookPolicy
   attr_reader :user, :record
 
   def initialize(user, record)
@@ -7,7 +7,7 @@ class ShelfPolicy
   end
 
   def index?
-    true
+    false
   end
 
   def show?
@@ -15,7 +15,7 @@ class ShelfPolicy
   end
 
   def create?
-    true
+    @record.user == @user
   end
 
   def update?
@@ -24,13 +24,5 @@ class ShelfPolicy
 
   def destroy?
     @record.user == @user
-  end
-
-  def search?
-    true
-  end
-
-  def scope
-    Pundit.policy_scope!(user, record.class)
   end
 end
