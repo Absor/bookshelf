@@ -8,7 +8,7 @@
 
 module.exports = function (grunt) {
 
-    grunt.option('force', true);
+    // grunt.option('force', true);
 
 
     // Load grunt tasks automatically
@@ -133,6 +133,7 @@ module.exports = function (grunt) {
 
         // Empties folders to start fresh
         clean: {
+            options: { force: true },
             dist: {
                 files: [
                     {
