@@ -5,6 +5,7 @@ require File.expand_path('../config/application', __FILE__)
 
 Bookshelf::Application.load_tasks
 
+task :travis => [:ngtest, :spec]
 task :test => [:ngtest, :ngbuild, :spec]
 
 task :ngtest do

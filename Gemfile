@@ -29,4 +29,5 @@ group :test do
   gem 'capybara'
   gem 'poltergeist'
   gem 'launchy'
+  gem 'compass'
 end
