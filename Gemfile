@@ -24,3 +24,9 @@ end
 group :development do
   gem 'rack-cors'
 end
+
+group :test do
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'launchy'
+end
