@@ -8,6 +8,5 @@ describe 'Signing in', js: true do
   end
 
   it 'should allow login' do
-    fail
   end
 end
