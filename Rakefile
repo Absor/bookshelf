@@ -15,3 +15,5 @@ end
 task :ngbuild do
   system("cd ngapp; grunt build")
 end
+
+task 'test:prepare'

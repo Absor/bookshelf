@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.1.0'
 
-gem 'rails', '4.0.2'
+gem 'rails', '4.1.0'
 gem 'rails-api'
 
 gem 'coveralls', require: false
@@ -30,4 +30,5 @@ group :test do
   gem 'poltergeist'
   gem 'launchy'
   gem 'compass'
+  gem 'simplecov', '0.7.1'
 end
