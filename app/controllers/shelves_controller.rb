@@ -15,12 +15,12 @@ class ShelvesController < ApplicationController
   end
 
   def create
-    @shelf = Shelf.new(params[:shelf])
+    @shelf = Shelf.new(shelf_params)
     @shelf.user = current_user
     authorize @shelf
 
     if @shelf.save
-      render json: @shelf, status: :created, location: bookshelf_url(@shelf)
+      render json: @shelf.to_json(include: :books), status: :created, location: bookshelf_url(@shelf)
     else
       render json: @shelf.errors, status: :unprocessable_entity
     end
@@ -30,7 +30,7 @@ class ShelvesController < ApplicationController
     @shelf = Shelf.find(params[:id])
     authorize @shelf
 
-    if @shelf.update(params[:shelf])
+    if @shelf.update(shelf_params)
       head :no_content
     else
       render json: @shelf.errors, status: :unprocessable_entity
@@ -44,5 +44,11 @@ class ShelvesController < ApplicationController
     @shelf.destroy
 
     head :no_content
+  end
+
+  private
+
+  def shelf_params
+    params.require(:shelf).permit(:name)
   end
 end

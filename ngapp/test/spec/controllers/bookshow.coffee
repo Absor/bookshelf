@@ -1,17 +1,17 @@
 'use strict'
 
-describe 'Controller: SignUpCtrl', ->
+describe 'Controller: BookShowCtrl', ->
 
   # load the controller's module
   beforeEach module 'bookshelfApp'
 
-  SignUpCtrl = {}
+  BookShowCtrl = {}
   scope = {}
 
   # Initialize the controller and a mock scope
   beforeEach inject ($controller, $rootScope) ->
     scope = $rootScope.$new()
-    SignUpCtrl = $controller 'SignUpCtrl', {
+    BookShowCtrl = $controller 'BookShowCtrl', {
       $scope: scope
     }
 

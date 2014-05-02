@@ -1,0 +1,19 @@
+<dl class="dl-horizontal">
+    <dt ng-show="book.authors">author(s)</dt>
+    <dd ng-show="book.authors">{{book.authors}}</dd>
+
+    <dt ng-show="book.publisher">publisher</dt>
+    <dd ng-show="book.publisher">{{book.publisher}}</dd>
+
+    <dt ng-show="book.published_date">published</dt>
+    <dd ng-show="book.published_date">{{book.published_date|date:'d.M.yyyy'}}</dd>
+
+    <dt ng-show="book.isbn">isbn</dt>
+    <dd ng-show="book.isbn">{{book.isbn}}</dd>
+
+    <dt ng-show="book.page_count">pages</dt>
+    <dd ng-show="book.page_count">{{book.page_count}}</dd>
+
+    <dt ng-show="book.language">language</dt>
+    <dd ng-show="book.language">{{book.language}}</dd>
+</dl>

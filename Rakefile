@@ -9,11 +9,11 @@ task :travis => [:ngtest, :spec]
 task :test => [:ngtest, :ngbuild, :spec]
 
 task :ngtest do
-  system("cd ngapp; grunt test")
+  system("cd ngapp; grunt test") or exit!(1)
 end
 
 task :ngbuild do
-  system("cd ngapp; grunt build")
+  system("cd ngapp; grunt build") or exit!(1)
 end
 
 task 'test:prepare'

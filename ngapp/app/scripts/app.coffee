@@ -26,12 +26,12 @@ angular
       })
       .state('bookshelf', {
         abstract: true
-        url: '/bookshelf'
+        url: '/bookshelves'
         template: '<div ui-view></div>'
         controller: 'BookshelfCtrl'
       })
       .state('bookshelf.list', {
-        url: '/list'
+        url: '/'
         templateUrl: 'views/bookshelf.list.html'
       })
       .state('bookshelf.show', {
@@ -42,13 +42,18 @@ angular
       .state('book', {
         parent: 'bookshelf'
         abstract: true
-        url: '/:bookshelfId/book'
+        url: '/:bookshelfId/books'
         template: '<div ui-view></div>'
         controller: 'BookCtrl'
       })
       .state('book.new', {
         url: '/new'
         templateUrl: 'views/book.new.html'
+      })
+      .state('bookshow', {
+        url: '/books/:bookId'
+        templateUrl: 'views/book.show.html'
+        controller: 'BookShowCtrl'
       })
   )
   .config ($httpProvider) ->

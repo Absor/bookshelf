@@ -377,6 +377,11 @@ module.exports = function (grunt) {
                         cwd: '.tmp/images',
                         dest: '<%= yeoman.dist %>/images',
                         src: ['generated/*']
+                    }, {
+                        expand: true,
+                        cwd: '<%= yeoman.app %>',
+                        src: 'bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*',
+                        dest: '<%= yeoman.dist %>'
                     }
                 ]
             },

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140427152145) do
+ActiveRecord::Schema.define(version: 20140502055922) do
 
   create_table "book_on_shelves", force: true do |t|
     t.integer  "shelf_id"
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 20140427152145) do
     t.string   "authentication_token",   default: "", null: false
   end
 
-  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", unique: true
+  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token"
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 

@@ -3,7 +3,6 @@
 angular.module('bookshelfApp')
   .controller 'SignInCtrl', ($scope, BookshelfAPI, $state) ->
     $scope.user = {}
-    $scope.error = false
 
     $scope.signIn = ->
       if $scope.user.email? and $scope.user.password?
@@ -11,7 +10,7 @@ angular.module('bookshelfApp')
         BookshelfAPI.User.signIn($scope.user)
           .then(
             -> $state.go 'main',
-            -> $scope.error = true
+            -> $scope.alert = {type: 'danger', msg: 'Wrong email or password.'}
           )
       else
-        $scope.error = true
+        $scope.alert = {type: 'danger', msg: 'Wrong email or password.'}

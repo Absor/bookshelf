@@ -4,10 +4,10 @@ class Users::SessionsController < Devise::SessionsController
   skip_after_filter  :verify_authorized
 
   def create
-    resource = User.find_for_database_authentication(email: params[:email])
-    return failure unless resource
-    return failure unless resource.valid_password?(params[:password])
-    handle_success(resource)
+    user = User.find_for_database_authentication(email: params[:email])
+    return failure unless user
+    return failure unless user.valid_password?(params[:password])
+    handle_success(user)
   end
 
   def destroy

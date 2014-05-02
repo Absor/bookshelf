@@ -1,8 +1,8 @@
 class BooksController < ApplicationController
-  skip_after_filter  :verify_authorized, only: [:search, :random]
-  before_action :set_bookshelf, except: [:search, :random]
-  skip_before_filter :authenticate_user_from_token!, :only => [:random]
-  skip_before_filter :authenticate_user!, :only => [:random]
+  skip_after_filter  :verify_authorized, only: [:search, :random, :show]
+  before_action :set_bookshelf, except: [:search, :random, :show]
+  skip_before_filter :authenticate_user_from_token!, :only => [:random, :show]
+  skip_before_filter :authenticate_user!, :only => [:random, :show]
 
   def index
     authorize @bookshelf
@@ -11,7 +11,6 @@ class BooksController < ApplicationController
   end
 
   def show
-    authorize @bookshelf
     @book = Book.find(params[:id])
 
     render json: @book
@@ -45,6 +44,7 @@ class BooksController < ApplicationController
     render json: @book.errors, status: :unprocessable_entity
   end
 
+=begin
   def update
     authorize @bookshelf
     @book = Book.find(params[:id])
@@ -55,12 +55,13 @@ class BooksController < ApplicationController
       render json: @book.errors, status: :unprocessable_entity
     end
   end
+=end
 
   def destroy
     authorize @bookshelf
     @book = Book.find(params[:id])
 
-    @book.destroy
+    @bookshelf.books.delete(@book)
 
     head :no_content
   end
@@ -81,6 +82,11 @@ class BooksController < ApplicationController
     @book = Book.all.sample
 
     render json: @book
+  end
+
+  def clear
+    authorize @bookshelf
+    @bookshelf.books.clear
   end
 
   private

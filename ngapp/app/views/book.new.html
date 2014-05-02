@@ -11,7 +11,7 @@
             <form role="form" novalidate>
                 <div class="form-group">
                     <label class="sr-only" for="search">Search</label>
-                    <input type="text" class="form-control center-block" id="search" placeholder="" ng-model="searchTerm">
+                    <input type="text" class="form-control center-block" id="search" placeholder="Book title, ISBN, etc." ng-model="searchTerm">
                 </div>
                 <button type="submit" class="btn btn-default center-block" ng-click="search(searchTerm)">Search</button>
             </form>
@@ -29,25 +29,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-8">
                                 <h4>{{book.title}}</h4>
-                                <dl>
-                                    <dt ng-show="book.authors">author(s)</dt>
-                                    <dd ng-show="book.authors">{{book.authors}}</dd>
-
-                                    <dt ng-show="book.publisher">publisher</dt>
-                                    <dd ng-show="book.publisher">{{book.publisher}}</dd>
-
-                                    <dt ng-show="book.published_date">published</dt>
-                                    <dd ng-show="book.published_date">{{book.published_date|date:'d.M.yyyy'}}</dd>
-
-                                    <dt ng-show="book.isbn">isbn</dt>
-                                    <dd ng-show="book.isbn">{{book.isbn}}</dd>
-
-                                    <dt ng-show="book.page_count">pages</dt>
-                                    <dd ng-show="book.page_count">{{book.page_count}}</dd>
-
-                                    <dt ng-show="book.language">language</dt>
-                                    <dd ng-show="book.language">{{book.language}}</dd>
-                                </dl>
+                                <div ng-include="'views/book.details.html'"></div>
                             </div>
                         </div>
                         <div class="row">

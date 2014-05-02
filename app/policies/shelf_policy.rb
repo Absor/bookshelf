@@ -15,7 +15,7 @@ class ShelfPolicy
   end
 
   def create?
-    true
+    @record.user == @user
   end
 
   def update?
@@ -23,6 +23,10 @@ class ShelfPolicy
   end
 
   def destroy?
+    @record.user == @user
+  end
+
+  def clear?
     @record.user == @user
   end
 end

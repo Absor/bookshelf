@@ -1,0 +1,28 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <h1>{{book.title}}</h1>
+                <p><a class="btn btn-default btn-lg" role="button" ng-click="back()"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></p>
+            </div>
+            <div class="col-sm-6 hidden-xs" ng-show="book.image_link">
+                <img ng-show="book.image_link" ng-src="{{book.image_link}}" alt="{{book.title}}" class="img-responsive img-thumbnail pull-right">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="margin-bottom: 20px">
+        <div class="col-xs-12">
+            <alert ng-show="alert" type="alert.type">{{alert.msg}}</alert>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div ng-include="'views/book.details.html'"></div>
+            <blockquote ng-show="book.description">
+                {{book.description}}
+            </blockquote>
+        </div>
+    </div>
+</div>
