@@ -6,7 +6,6 @@ angular.module('bookshelfApp')
     $scope.errors = {}
 
     $scope.signUp = ->
-      console.log($scope.user)
       BookshelfAPI.User.create($scope.user).then(
         (data) ->
           Storage.storeLogin data.email, data.token
