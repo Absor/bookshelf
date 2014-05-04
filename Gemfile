@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.1'
+ruby '2.1.0'
 
 gem 'rails', '4.1.0'
 gem 'rails-api'
@@ -31,4 +31,6 @@ group :test do
   gem 'launchy'
   gem 'compass'
   gem 'simplecov', '0.7.1'
+  gem 'database_cleaner'
+  gem "factory_girl_rails", "~> 4.0"
 end

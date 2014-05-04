@@ -26,7 +26,8 @@ describe 'Controller: SignInCtrl', ->
         email: 'e@mail.com',
         password: 'Email1'
       $httpBackend.expectPOST('/api/users/sign_in', data).respond 'jee'
-      $httpBackend.expectGET('views/main.html').respond 'html' # redirect to main page
+      $httpBackend.expectGET('views/main.html').respond 'html'
+      $httpBackend.expectGET('views/bookshelf.list.html').respond 'html'
       scope.user = data
       scope.signIn()
       $httpBackend.flush()

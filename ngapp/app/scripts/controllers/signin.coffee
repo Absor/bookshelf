@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('bookshelfApp')
-  .controller 'SignInCtrl', ($scope, BookshelfAPI, $state) ->
+  .controller 'SignInCtrl', ($scope, BookshelfAPI, $state, Alert) ->
     $scope.user = {}
 
     $scope.signIn = ->
@@ -9,8 +9,8 @@ angular.module('bookshelfApp')
         $scope.error = false
         BookshelfAPI.User.signIn($scope.user)
           .then(
-            -> $state.go 'main',
-            -> $scope.alert = {type: 'danger', msg: 'Wrong email or password.'}
+            -> $state.go 'bookshelf.list',
+            -> Alert.add('danger', 'Wrong email or password.')
           )
       else
-        $scope.alert = {type: 'danger', msg: 'Wrong email or password.'}
+        Alert.add('danger', 'Wrong email or password.')

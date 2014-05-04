@@ -1,8 +1,10 @@
 'use strict'
 
 angular.module('bookshelfApp')
-  .controller 'SignUpCtrl', ($scope, BookshelfAPI, Storage, $state) ->
-    $scope.user = {}
+  .controller 'SignUpCtrl', ($scope, BookshelfAPI, Storage, $state, Alert) ->
+    $scope.user = {
+      password_confirmation: ''
+    }
     $scope.errors = {}
 
     $scope.signUp = ->
@@ -10,7 +12,15 @@ angular.module('bookshelfApp')
         (data) ->
           Storage.storeLogin data.email, data.token
           $state.go 'bookshelf.list'
-        (error) -> $scope.errors = error
+        (data) ->
+          $scope.errors = data
+          Alert.clear()
+          _.each($scope.errors, (errors, key) ->
+            error = _.first(errors)
+            Alert.add('warning', 'Email ' + error + '.') if key == 'email'
+            Alert.add('warning', 'Password ' + error + '.') if key == 'password'
+            Alert.add('warning', 'Password confirmation ' + error + '.') if key == 'password_confirmation'
+          )
       )
 
     $scope.getError = (field) ->

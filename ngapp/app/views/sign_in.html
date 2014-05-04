@@ -1,7 +1,7 @@
 <div class="container" style="margin-top: 20px">
-    <div class="row" ng-show="alert">
+    <div class="row">
         <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
-            <alert ng-show="alert" type="alert.type">{{alert.msg}}</alert>
+            <alert ng-repeat="alert in alerts" type="alert.type" close="alert.close()">{{alert.msg}}</alert>
         </div>
     </div>
     <div class="row">

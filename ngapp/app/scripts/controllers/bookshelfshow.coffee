@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('bookshelfApp')
-  .controller 'BookshelfShowCtrl', ($scope, $stateParams, BookshelfAPI) ->
+  .controller 'BookshelfShowCtrl', ($scope, $stateParams, BookshelfAPI, Alert) ->
     $scope.bookshelfId = parseInt($stateParams['bookshelfId'])
 
     $scope.bookshelfIndex = -1
@@ -14,10 +14,7 @@ angular.module('bookshelfApp')
     $scope.destroyBook = (bookId) ->
       BookshelfAPI.Book.destroy($scope.bookshelfId, bookId).then(
         (data) ->
-          _.remove($scope.bookshelf().books, (book) -> book.id == bookId)
-          $scope.alert = {type: 'success', msg: 'Book deleted.'}
-        (error) -> $scope.alert = {type: 'danger', msg: 'Could not delete book.'}
+          deleted = _.remove($scope.bookshelf().books, (book) -> book.id == bookId)
+          Alert.add('success', 'Book deleted.')
+        (error) -> Alert.add('danger', 'Could not delete book.')
       )
-
-    $scope.closeAlert = ->
-      $scope.alert = null

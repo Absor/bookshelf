@@ -56,5 +56,11 @@ angular
         controller: 'BookShowCtrl'
       })
   )
-  .config ($httpProvider) ->
+  .config(($httpProvider) ->
     $httpProvider.interceptors.push 'BookshelfResponseInterceptor'
+  )
+  .run(($rootScope, $urlRouter, Alert) ->
+    $rootScope.$on('$locationChangeSuccess', ->
+      Alert.clear()
+    )
+  )
