@@ -33,4 +33,5 @@ group :test do
   gem 'simplecov', '0.7.1'
   gem 'database_cleaner'
   gem "factory_girl_rails", "~> 4.0"
+  gem 'webmock'
 end

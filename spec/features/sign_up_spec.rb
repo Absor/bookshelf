@@ -37,7 +37,7 @@ describe 'Signing up', js: true do
   end
 
   it 'is successful with correct input' do
-    expect(User.count).to be(0)
+    expect(User.count).to eq(0)
     fill_in 'Email', with: 'testi@testi.fi'
     fill_in 'Password', with: '1234567a'
     fill_in 'Password confirmation', with: '1234567a'
@@ -45,6 +45,6 @@ describe 'Signing up', js: true do
     expect(page).to have_content 'Sign out'
     click_link 'Sign out'
     expect(page).not_to have_content 'Sign out'
-    expect(User.count).to be(1)
+    expect(User.count).to eq(1)
   end
 end

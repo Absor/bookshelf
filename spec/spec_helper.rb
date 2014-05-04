@@ -5,6 +5,7 @@ Coveralls.wear!('rails')
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
+require 'webmock/rspec'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 Capybara.javascript_driver = :poltergeist
@@ -30,6 +31,10 @@ RSpec.configure do |config|
   # config.mock_with :mocha
   # config.mock_with :flexmock
   # config.mock_with :rr
+
+  config.before do
+    WebMock.disable_net_connect!(:allow_localhost => true)
+  end
 
   config.formatter = :documentation
 

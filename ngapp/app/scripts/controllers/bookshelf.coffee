@@ -2,6 +2,7 @@
 
 angular.module('bookshelfApp')
   .controller 'BookshelfCtrl', ($scope, BookshelfAPI, $state, Alert) ->
+    $scope.bookshelves = []
     BookshelfAPI.Bookshelf.findAll().then(
       (data) -> $scope.bookshelves = data
       (error) -> $scope.bookshelves = []

@@ -1,0 +1,762 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 494,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "Q7LK8lP_sTUC",
+   "etag": "8RF5opKfcXY",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Q7LK8lP_sTUC",
+   "volumeInfo": {
+    "title": "The Children of Cthulhu",
+    "authors": [
+     "John Pelan",
+     "Benjamin Adams"
+    ],
+    "publisher": "Random House LLC",
+    "publishedDate": "2009-01-16",
+    "description": "Descend to the depths of primal horror with this chilling collection of original stories drawn from H. P. Lovecraft’s shocking, terrifying, and eerily prescient Cthulhu Mythos. In twenty-one dark visions, a host of outstanding contemporary writers tap into our innermost fears, with tales set in a misbegotten new world that could have been spawned only by the master of the macabre himself, H. P. Lovecraft. Inside you’ll find: DETAILS by China Miéville: A curious boy discovers that within the splinters of cracked wood or the tangle of tree branches, the devil is in the details. VISITATION by James Robert Smith: When Edgar Allan Poe arrives, a callow man finally gets what he always wanted—and what he may eternally despise. MEET ME ON THE OTHER SIDE by Yvonne Navarro: A couple in love with terror travels beyond their wildest dreams—and into their nightmares. A FATAL EXCEPTION HAS OCCURRED AT . . . by Alan Dean Foster: Internet terrorism extends far beyond transmitting threats of evil. AND SEVENTEEN MORE HARROWING TALES From the Trade Paperback edition.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780307555038"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0307555038"
+     }
+    ],
+    "pageCount": 480,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 11,
+    "contentVersion": "0.2.1.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://bks1.books.google.fi/books?id=Q7LK8lP_sTUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks1.books.google.fi/books?id=Q7LK8lP_sTUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=Q7LK8lP_sTUC&printsec=frontcover&dq=cthulhu&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=Q7LK8lP_sTUC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/The_Children_of_Cthulhu.html?hl=&id=Q7LK8lP_sTUC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 13.42,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 9.13,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "http://books.google.fi/books?id=Q7LK8lP_sTUC&dq=cthulhu&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.342E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 9130000.0,
+       "currencyCode": "EUR"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fi/books/download/The_Children_of_Cthulhu-sample-epub.acsm?id=Q7LK8lP_sTUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=Q7LK8lP_sTUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Descend to the depths of primal horror with this chilling collection of original stories drawn from H. P. Lovecraft’s shocking, terrifying, and eerily prescient Cthulhu Mythos."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "659r23-K96sC",
+   "etag": "ZQLpyQ7HB9s",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/659r23-K96sC",
+   "volumeInfo": {
+    "title": "Call of Cthulhu Keepers Companion",
+    "subtitle": "Blasphemous Knowledge, Forbidden Secrets and Handy Information for Call of Cthulhu Roleplaying",
+    "authors": [
+     "Keith Herber"
+    ],
+    "publisher": "Chaosium Inc.",
+    "publishedDate": "2000-09-01",
+    "description": "[CALL OF CTHULHU ROLEPLAYING] \"The Keeper's Companion\" is an invaluable resource for gamemasters. The material includes advice for new keepers, a lengthy study of Mythos artifacts, a learned discussion of many occult books, an up-to-the-moment description of every facet of forensic medicine, a thorough revision and expansion of the game skills (including nearly two dozen new ones), and the entire text of \"The Keeper's Compendium,\" somewhat updated -- forbidden books, secret cults, alien races, and mysterious places. Additional short essays and features round out this book -- more than 100,000 words!",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781568821443"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1568821441"
+     }
+    ],
+    "pageCount": 208,
+    "printType": "BOOK",
+    "categories": [
+     "Games"
+    ],
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://bks1.books.google.fi/books?id=659r23-K96sC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks1.books.google.fi/books?id=659r23-K96sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=659r23-K96sC&printsec=frontcover&dq=cthulhu&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=659r23-K96sC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/Call_of_Cthulhu_Keepers_Companion.html?hl=&id=659r23-K96sC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=659r23-K96sC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Additional short essays and features round out this book -- more than 100,000 words!"
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "ZyFoBl6M6LEC",
+   "etag": "ToeYu5ifeQo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/ZyFoBl6M6LEC",
+   "volumeInfo": {
+    "title": "The Strange Sound of Cthulhu: Music Inspired by the Writings of H. P. Lovecraft",
+    "authors": [
+     "Gary Hill"
+    ],
+    "publisher": "Lulu.com",
+    "publishedDate": "2006-08-01",
+    "description": "Arguably no other author has inspired more musicians than has Howard Phillips Lovecraft. Here, for the first time, is a book documenting the music inspired by the works of this literary genius, with insights provided by the artists. The book features a foreword by H. P. Lovecraft expert S. T. Joshi and cover artwork by Joseph Vargo.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781847287762"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "184728776X"
+     }
+    ],
+    "pageCount": 264,
+    "printType": "BOOK",
+    "categories": [
+     "Performing Arts"
+    ],
+    "averageRating": 5.0,
+    "ratingsCount": 1,
+    "contentVersion": "0.1.3.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://bks3.books.google.fi/books?id=ZyFoBl6M6LEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks3.books.google.fi/books?id=ZyFoBl6M6LEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=ZyFoBl6M6LEC&printsec=frontcover&dq=cthulhu&hl=&cd=3&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=ZyFoBl6M6LEC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/The_Strange_Sound_of_Cthulhu_Music_Inspi.html?hl=&id=ZyFoBl6M6LEC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fi/books/download/The_Strange_Sound_of_Cthulhu_Music_Inspi-sample-epub.acsm?id=ZyFoBl6M6LEC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=ZyFoBl6M6LEC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "The book features a foreword by H. P. Lovecraft expert S. T. Joshi and cover artwork by Joseph Vargo."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "UIhoWrz7H48C",
+   "etag": "7iIBEWmCmV0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/UIhoWrz7H48C",
+   "volumeInfo": {
+    "title": "The Call of Cthulhu",
+    "authors": [
+     "Howard Phillips Lovecraft"
+    ],
+    "publisher": "United Holdings Group",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781612983301"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1612983308"
+     }
+    ],
+    "printType": "BOOK",
+    "averageRating": 3.5,
+    "ratingsCount": 23,
+    "contentVersion": "0.0.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://bks0.books.google.fi/books?id=UIhoWrz7H48C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks0.books.google.fi/books?id=UIhoWrz7H48C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=UIhoWrz7H48C&printsec=frontcover&dq=cthulhu&hl=&cd=4&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=UIhoWrz7H48C&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/The_Call_of_Cthulhu.html?hl=&id=UIhoWrz7H48C"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true
+    },
+    "pdf": {
+     "isAvailable": true
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=UIhoWrz7H48C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "KLKQB55ucpAC",
+   "etag": "/3bNphf8Xb8",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/KLKQB55ucpAC",
+   "volumeInfo": {
+    "title": "The Call of Cthulhu and Other Weird Stories",
+    "authors": [
+     "H. P. Lovecraft"
+    ],
+    "publisher": "Penguin",
+    "publishedDate": "1999-10-01",
+    "description": "Frequently imitated and widely influential, H. P. Lovecraft reinvented the horror genre for the twentieth century. Discarding witches and ghosts, he envisaged mankind as an outpost of dwindling sanity in a chaotic and malevolent universe. S. T. Joshi makes his selection from the early tales of nightmares and madness to the overpowering cosmic terror of 'The Call of Cthulhu'. This is the first paperback edition to include the definitive corrected texts of these classics of American fantasy fiction.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781101100110"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1101100117"
+     }
+    ],
+    "pageCount": 448,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 4.0,
+    "ratingsCount": 26,
+    "contentVersion": "0.0.2.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://bks6.books.google.fi/books?id=KLKQB55ucpAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks6.books.google.fi/books?id=KLKQB55ucpAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=KLKQB55ucpAC&printsec=frontcover&dq=cthulhu&hl=&cd=5&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=KLKQB55ucpAC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/The_Call_of_Cthulhu_and_Other_Weird_Stor.html?hl=&id=KLKQB55ucpAC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 15.08,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 10.25,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "http://books.google.fi/books?id=KLKQB55ucpAC&dq=cthulhu&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.508E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 1.025E7,
+       "currencyCode": "EUR"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fi/books/download/The_Call_of_Cthulhu_and_Other_Weird_Stor-sample-epub.acsm?id=KLKQB55ucpAC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=KLKQB55ucpAC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "This is the first paperback edition to include the definitive corrected texts of these classics of American fantasy fiction."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "A3Apl629GDAC",
+   "etag": "ISkv0XTEA8o",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/A3Apl629GDAC",
+   "volumeInfo": {
+    "title": "Tales of the Cthulhu Mythos",
+    "authors": [
+     "H.P. Lovecraft",
+     "Various"
+    ],
+    "publisher": "Random House LLC",
+    "publishedDate": "2011-10-12",
+    "description": "\"The oldest and strongest emotion of mankind is fear, and the oldest and strongest kind of fear is fear of the unknown.\" --H. P. LOVECRAFT, \"Supernatural Horror in Literature\" Howard Phillips Lovecraft forever changed the face of horror, fantasy, and science fiction with a remarkable series of stories as influential as the works of Poe, Tolkien, and Edgar Rice Burroughs. His chilling mythology established a gateway between the known universe and an ancient dimension of otherworldly terror, whose unspeakable denizens and monstrous landscapes--dread Cthulhu, Yog-Sothoth, the Plateau of Leng, the Mountains of Madness--have earned him a permanent place in the history of the macabre. In Tales of the Cthulhu Mythos, a pantheon of horror and fantasy's finest authors pay tribute to the master of the macabre with a collection of original stories set in the fearsome Lovecraft tradition: ¸ The Call of Cthulhu by H. P. Lovecraft: The slumbering monster-gods return to the world of mortals. ¸ Notebook Found in a Deserted House by Robert Bloch: A lone farmboy chronicles his last stand against a hungering backwoods evil. ¸ Cold Print by Ramsey Campbell: An avid reader of forbidden books finds a treasure trove of deadly volumes--available for a bloodcurdling price. ¸ The Freshman by Philip José Farmer: A student of the black arts receives an education in horror at notorious Miskatonic University. PLUS EIGHTEEN MORE SPINE-TINGLING TALES! From the Trade Paperback edition.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780307547903"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0307547906"
+     }
+    ],
+    "pageCount": 480,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 24,
+    "contentVersion": "0.1.0.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://bks6.books.google.fi/books?id=A3Apl629GDAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks6.books.google.fi/books?id=A3Apl629GDAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=A3Apl629GDAC&printsec=frontcover&dq=cthulhu&hl=&cd=6&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=A3Apl629GDAC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/Tales_of_the_Cthulhu_Mythos.html?hl=&id=A3Apl629GDAC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 14.36,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 9.76,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "http://books.google.fi/books?id=A3Apl629GDAC&dq=cthulhu&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 1.436E7,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 9760000.0,
+       "currencyCode": "EUR"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fi/books/download/Tales_of_the_Cthulhu_Mythos-sample-epub.acsm?id=A3Apl629GDAC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=A3Apl629GDAC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "&quot; --H. P. LOVECRAFT, &quot;Supernatural Horror in Literature&quot; Howard Phillips Lovecraft forever changed the face of horror, fantasy, and science fiction with a remarkable series of stories as influential as the works of Poe, Tolkien, and Edgar ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "_Hjbd1os6oAC",
+   "etag": "sMJtmKi+AoE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/_Hjbd1os6oAC",
+   "volumeInfo": {
+    "title": "The House of Cthulhu",
+    "authors": [
+     "Brian Lumley"
+    ],
+    "publisher": "Hachette UK",
+    "publishedDate": "2012-12-14",
+    "description": "Tossed out from the heart of Surtsey, a volcano risen from the sea off Iceland, a ball of weird glass contains the last relics of a world long vanished when Atlantis was young. Translated from the glyphs out of time, now at last the stories and histories of the Primal Land can be told. Tales of sorcery: of demons, heroes, and perilous quests. And of a doomed wizard's search for immortality. Enter the House of Cthulhu if you dare - and leave your prints in the drifted dust of those who dared before you!",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780575087347"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "057508734X"
+     }
+    ],
+    "pageCount": 309,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 2.5,
+    "ratingsCount": 5,
+    "contentVersion": "1.1.1.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://bks9.books.google.fi/books?id=_Hjbd1os6oAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks9.books.google.fi/books?id=_Hjbd1os6oAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=_Hjbd1os6oAC&printsec=frontcover&dq=cthulhu&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=_Hjbd1os6oAC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/The_House_of_Cthulhu.html?hl=&id=_Hjbd1os6oAC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 3.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 3.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "http://books.google.fi/books?id=_Hjbd1os6oAC&dq=cthulhu&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 3990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 3990000.0,
+       "currencyCode": "EUR"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fi/books/download/The_House_of_Cthulhu-sample-epub.acsm?id=_Hjbd1os6oAC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=_Hjbd1os6oAC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Translated from the glyphs out of time, now at last the stories and histories of the Primal Land can be told. Tales of sorcery: of demons, heroes, and perilous quests. And of a doomed wizard&#39;s search for immortality."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "9_Li9bsfahMC",
+   "etag": "NUbJTV++M/Y",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/9_Li9bsfahMC",
+   "volumeInfo": {
+    "title": "The Call of Cthulhu and Other Weird Tales",
+    "authors": [
+     "H. P Lovecraft"
+    ],
+    "publisher": "Random House",
+    "publishedDate": "2011-05-05",
+    "description": "Between these pages you will find things that lurk, things that scurry in the walls, things that move unseen, things that have learnt to walk that ought to crawl, unfathomable blackness, unconquerable evil, inhuman impulses, abnormal bodies, ancient rites, nameless lands best left undiscovered, thoughts best left unspoken, doors best left closed, names best forgotten. You have been warned.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781446476291"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1446476294"
+     }
+    ],
+    "pageCount": 560,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "contentVersion": "2.10.4.0.preview.2",
+    "imageLinks": {
+     "smallThumbnail": "http://bks8.books.google.fi/books?id=9_Li9bsfahMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks8.books.google.fi/books?id=9_Li9bsfahMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=9_Li9bsfahMC&printsec=frontcover&dq=cthulhu&hl=&cd=8&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=9_Li9bsfahMC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/The_Call_of_Cthulhu_and_Other_Weird_Tale.html?hl=&id=9_Li9bsfahMC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 2.99,
+     "currencyCode": "EUR"
+    },
+    "retailPrice": {
+     "amount": 2.99,
+     "currencyCode": "EUR"
+    },
+    "buyLink": "http://books.google.fi/books?id=9_Li9bsfahMC&dq=cthulhu&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 2990000.0,
+       "currencyCode": "EUR"
+      },
+      "retailPrice": {
+       "amountInMicros": 2990000.0,
+       "currencyCode": "EUR"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fi/books/download/The_Call_of_Cthulhu_and_Other_Weird_Tale-sample-epub.acsm?id=9_Li9bsfahMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=9_Li9bsfahMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "&#39;The twentieth century&#39;s greatest practitioner of the classic horror tale&#39; Stephen King Between these pages you will find things that lurk, things that scurry in the walls, things that slither unseen, things that have learnt to walk that ..."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "jZXNYyCVBSUC",
+   "etag": "ns+0PUNGI0o",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/jZXNYyCVBSUC",
+   "volumeInfo": {
+    "title": "The Riddle of Cthulhu",
+    "authors": [
+     "Ray Emerson"
+    ],
+    "publisher": "Llumina Press",
+    "publishedDate": "2003-02-01",
+    "description": "Cthulhu's is bent on destroying Mankind using his evil \"Old Ones.\" In the H. P. Lovecraft tradition, the eternal battle between good and evil intertwines with the age-old mystery: Where did we come from and why are we here?",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_10",
+      "identifier": "1932047786"
+     },
+     {
+      "type": "ISBN_13",
+      "identifier": "9781932047783"
+     }
+    ],
+    "pageCount": 248,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "contentVersion": "1.1.1.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://bks3.books.google.fi/books?id=jZXNYyCVBSUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks3.books.google.fi/books?id=jZXNYyCVBSUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=jZXNYyCVBSUC&printsec=frontcover&dq=cthulhu&hl=&cd=9&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=jZXNYyCVBSUC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/The_Riddle_of_Cthulhu.html?hl=&id=jZXNYyCVBSUC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fi/books/download/The_Riddle_of_Cthulhu-sample-pdf.acsm?id=jZXNYyCVBSUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=jZXNYyCVBSUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "Cthulhu&#39;s is bent on destroying Mankind using his evil &quot;Old Ones.&quot; In the H. P. Lovecraft tradition, the eternal battle between good and evil intertwines with the age-old mystery: Where did we come from and why are we here?"
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "TEykIb3MCKMC",
+   "etag": "pdvaL51y9R4",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/TEykIb3MCKMC",
+   "volumeInfo": {
+    "title": "Cthulhu Fhtagn, Baby! and Other Cosmic Insolence",
+    "authors": [
+     "Will Ludwigsen"
+    ],
+    "publisher": "Lethe Press",
+    "publishedDate": "2006-01",
+    "description": "Oscar Wilde wrote that \"the real tragedies of life occur in such an inartistic manner that they hurt us by their entire lack of style.\" Not satisfied with that, Will Ludwigsen chooses instead to add humor and flair to the horrors that surround us. Why settle for the lesser of evils in your newspaper when you can read an entire book of stories about zombie-exploiting, plesiosaur-chopping, alien-dissecting, robotically-enhanced, lunatics instead? This premiere collection by Will Ludwigsen brings together thirteen of his best horror, mystery, and science fiction stories from magazines such as Weird Tales, Alfred Hitchcock's Mystery Magazine, and Cemetery Dance, plus three originals. Though the work of a single deranged author, these varied tales share a flippant disdain for common decency, courtesy, and sense. Witty and irreverent, they remind us that we have more hope than we think--if only because we have wit and irreverence.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9781590210529"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "1590210522"
+     }
+    ],
+    "pageCount": 147,
+    "printType": "BOOK",
+    "categories": [
+     "Fiction"
+    ],
+    "averageRating": 3.0,
+    "ratingsCount": 2,
+    "contentVersion": "0.0.1.0.preview.3",
+    "imageLinks": {
+     "smallThumbnail": "http://bks1.books.google.fi/books?id=TEykIb3MCKMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://bks1.books.google.fi/books?id=TEykIb3MCKMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.fi/books?id=TEykIb3MCKMC&printsec=frontcover&dq=cthulhu&hl=&cd=10&source=gbs_api",
+    "infoLink": "http://books.google.fi/books?id=TEykIb3MCKMC&dq=cthulhu&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.fi/books/about/Cthulhu_Fhtagn_Baby_and_Other_Cosmic_Ins.html?hl=&id=TEykIb3MCKMC"
+   },
+   "saleInfo": {
+    "country": "FI",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "FI",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.fi/books/download/Cthulhu_Fhtagn_Baby_and_Other_Cosmic_Ins-sample-epub.acsm?id=TEykIb3MCKMC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.fi/books/reader?id=TEykIb3MCKMC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "This premiere collection by Will Ludwigsen brings together thirteen of his best horror, mystery, and science fiction stories from magazines such as Weird Tales, Alfred Hitchcock&#39;s Mystery Magazine, and Cemetery Dance, plus three originals."
+   }
+  }
+ ]
+}

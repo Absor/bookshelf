@@ -15,10 +15,10 @@
                 <div class="panel-heading clearfix">
                     <div class="btn-group pull-right">
                         <button type="button" class="btn btn-default" tooltip="Add books" tooltip-append-to-body="true" ui-sref="book.new({ bookshelfId: bookshelf().id })">
-                            <span class="glyphicon glyphicon-plus"></span>
+                            <span class="glyphicon glyphicon-plus"></span><span class="hidden-xs"> Add books</span>
                         </button>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tooltip="Removal tools" tooltip-append-to-body="true">
+                            <button id="deleteTools" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tooltip="Removal tools" tooltip-append-to-body="true">
                                 <span class="glyphicon glyphicon-trash"></span>
                                 <span class="caret"></span>
                             </button>
@@ -37,12 +37,12 @@
                                 <div class="caption">
                                     <div class="btn-group btn-group-justified">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-default" ui-sref="bookshow({bookshelfId: bookshelf().id, bookId: book.id})" tooltip="Show book information" tooltip-append-to-body="true">
+                                            <button id="show{{book.id}}" type="button" class="btn btn-default" ui-sref="bookshow({bookshelfId: bookshelf().id, bookId: book.id})" tooltip="Show book information" tooltip-append-to-body="true">
                                                 <span class="glyphicon glyphicon-search"></span>
                                             </button>
                                         </div>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-default" ng-click="destroyBook(book.id)" tooltip="Delete book" tooltip-append-to-body="true">
+                                            <button id="delete{{book.id}}" type="button" class="btn btn-default" ng-click="destroyBook(book.id)" tooltip="Delete book" tooltip-append-to-body="true">
                                                 <span class="glyphicon glyphicon-trash"></span>
                                             </button>
                                         </div>

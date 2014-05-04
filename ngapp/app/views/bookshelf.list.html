@@ -28,13 +28,13 @@
                     </div>
                     <div class="btn-group pull-right">
                         <button type="button" class="btn btn-default" tooltip="Show whole bookshelf" tooltip-append-to-body="true" ui-sref="bookshelf.show({ bookshelfId: bookshelf.id })">
-                            <span class="glyphicon glyphicon-zoom-in"></span>
+                            <span class="glyphicon glyphicon-zoom-in"></span><span class="hidden-xs"> Show all</span>
                         </button>
                         <button type="button" class="btn btn-default" tooltip="Add books" tooltip-append-to-body="true" ui-sref="book.new({ bookshelfId: bookshelf.id })">
-                            <span class="glyphicon glyphicon-plus"></span>
+                            <span class="glyphicon glyphicon-plus"></span><span class="hidden-xs"> Add books</span>
                         </button>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tooltip="Removal tools" tooltip-append-to-body="true">
+                            <button id="deleteTools" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tooltip="Removal tools" tooltip-append-to-body="true">
                                 <span class="glyphicon glyphicon-trash"></span>
                                 <span class="caret"></span>
                             </button>

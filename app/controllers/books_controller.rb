@@ -22,7 +22,6 @@ class BooksController < ApplicationController
 
     if @book.isbn
       existing = Book.find_by(isbn: @book.isbn)
-      puts existing
       if existing
         @book = existing
         @bookshelf.books << @book
@@ -32,7 +31,6 @@ class BooksController < ApplicationController
         user_ip = request.remote_ip
         google_books = GoogleBooks.search("isbn:#{@book.isbn}", {}, user_ip)
         @book = gbook_to_book google_books.first
-        puts @book
         if @book.save
           @bookshelf.books << @book
           render json: @book, status: :created, location: bookshelf_book_url(@bookshelf, @book)
