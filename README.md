@@ -9,6 +9,7 @@ User can keep track of their library and wanted books by having virtual bookshel
 
 # Data model
 
+![Data model](http://yuml.me/diagram/scruffy;/class/[User]1-*[Shelf], [Shelf]*-*[Book]) or by Rails models:
 ![Data model](http://yuml.me/diagram/scruffy;/class/[User]1-*[Shelf], [Shelf]1-*[BookOnShelf], [BookOnShelf]*-1[Book])
 
 # Heroku setup
@@ -29,3 +30,9 @@ This sofware uses nodejs-grunt-compass buildpack to first build the Angular proj
     ```
 
 4. Push to Heroku
+
+# Untested
+
+* Renaming a bookshelf.
+* Adding a book that is already in the database to a shelf.
+* Unauthorized access causes forced logout.
