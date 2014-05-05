@@ -3,6 +3,14 @@
 [![Build Status](https://travis-ci.org/Absor/bookshelf.svg?branch=master)](https://travis-ci.org/Absor/bookshelf)
 [![Coverage Status](https://coveralls.io/repos/Absor/bookshelf/badge.png?branch=master)](https://coveralls.io/r/Absor/bookshelf?branch=master)
 
+# Bookshelf
+
+User can keep track of their library and wanted books by having virtual bookshelves where they can add books.
+
+# Data model
+
+![Data model](http://yuml.me/diagram/scruffy;/class/[User]1-*[Shelf], [Shelf]1-*[BookOnShelf], [BookOnShelf]*-1[Book])
+
 # Heroku setup
 
 This sofware uses nodejs-grunt-compass buildpack to first build the Angular project and then the basic Ruby buildpack to setup Rails project.
